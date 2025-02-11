@@ -1,38 +1,38 @@
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="/"
-              >Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Pesquisar">Pesquisar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Listar">Listar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Atualizar">Atualizar</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-sm-2"
-            type="search"
-            placeholder="Search"
-          />
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/"
+            >Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Pesquisar">Pesquisar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Listar">Listar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Atualizar">Atualizar</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-sm-2"
+          type="search"
+          placeholder="Search"
+        />
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
     </div>
-  </nav>
-  
-  <div class="containerAtualizar">
+  </div>
+</nav>
+
+<div class="containerAtualizar">
   <form>
     <fieldset>
       <div>
@@ -44,10 +44,14 @@
           placeholder="Cnpj"
         />
       </div>
-  
-      <button type="button" class="btn btn-primary disabled">Pesquisar</button>
-      <button type="button" class="btn btn-primary disabled">Limpar</button>
-  
+
+      <div class="containerButtonAtualizar">
+        <button type="button" class="btn btn-primary disabled">
+          Pesquisar
+        </button>
+        <button type="button" class="btn btn-primary disabled">Limpar</button>
+      </div>
+
       <div>
         <label for="exampleCorretora" class="form-label mt-4">Corretora</label>
         <input
@@ -57,9 +61,11 @@
           placeholder="Corretora"
         />
       </div>
-  
+
       <div>
-        <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
+        <label for="exampleLogradouro" class="form-label mt-4"
+          >Logradouro</label
+        >
         <input
           type="text"
           class="form-control"
@@ -67,7 +73,7 @@
           placeholder="Logradouro"
         />
       </div>
-  
+
       <div>
         <label for="exampleCep" class="form-label mt-4">Cep</label>
         <input
@@ -77,9 +83,11 @@
           placeholder="Cep"
         />
       </div>
-  
+
       <div>
-        <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
+        <label for="exampleNomeSocial" class="form-label mt-4"
+          >Nome Social</label
+        >
         <input
           type="text"
           class="form-control"
@@ -87,7 +95,7 @@
           placeholder="Nome Social"
         />
       </div>
-  
+
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
         <input
@@ -98,8 +106,10 @@
         />
       </div>
     </fieldset>
+  </form>
+
+  <div class="containerButtonAtualizar">
     <button type="button" class="btn btn-primary disabled">Enviar</button>
     <button type="button" class="btn btn-primary disabled">Limpar</button>
-  </form>
+  </div>
 </div>
-  
