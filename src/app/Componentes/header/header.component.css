@@ -2,14 +2,30 @@
     padding-top: 70px;
     width: 980px;
     height: 780px;
-    border: 1px solid black;
-    border-radius: 5px;
+
 }
 
 
-.containerButton{
+.containerButtonEnviar{
     padding-top: 10px;
     padding-left: 20px;
+}
+
+
+
+.button{
+    background-color: #008CBA;/* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 4px;
+    cursor: pointer;
+
+
 }
 
 
