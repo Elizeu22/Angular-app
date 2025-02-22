@@ -13,6 +13,11 @@ import { HeaderComponent } from './Componentes/header/header.component';
 import { PesquisarComponent } from './Componentes/pesquisar/pesquisar.component';
 import { ListarComponent } from './Componentes/listar/listar.component';
 import { AtualizarComponent } from './Componentes/atualizar/atualizar.component';
+import { CorretoraService } from './Service/corretora.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';  
+import { provideHttpClient } from '@angular/common/http';
+
+ 
 
 
 @NgModule({
@@ -30,10 +35,15 @@ import { AtualizarComponent } from './Componentes/atualizar/atualizar.component'
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    CorretoraService,
+    provideHttpClient()
+
   ],
   bootstrap: [AppComponent]
 })
