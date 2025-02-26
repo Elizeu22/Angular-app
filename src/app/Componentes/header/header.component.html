@@ -26,37 +26,37 @@
 </nav>
 
 <div class="container">
-  <form>
+
     <fieldset>
       <div>
         <label for="exampleCorretora" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCorretora" placeholder="Corretora" />
+        <input type="text" class="form-control" id="exampleCorretora"  [(ngModel)]="corretoraSalvar.cnpj"  placeholder="Corretora" />
       </div>
 
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Corretora</label>
-        <input type="text" class="form-control" id="exampleCnpj" placeholder="Cnpj" />
+        <input type="text" class="form-control" id="exampleCnpj"  [(ngModel)]="corretoraSalvar.corretora" placeholder="Cnpj" />
       </div>
 
       <div>
         <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
-        <input type="text" class="form-control" id="exampleLogradouro" placeholder="Logradouro" />
+        <input type="text" class="form-control" id="exampleLogradouro"  [(ngModel)]="corretoraSalvar.logradouro" placeholder="Logradouro" />
       </div>
 
       <div>
         <label for="exampleCep" class="form-label mt-4">Cep</label>
-        <input type="text" class="form-control" id="exampleCep" placeholder="Cep" />
+        <input type="text" class="form-control" id="exampleCep"  [(ngModel)]="corretoraSalvar.cep" placeholder="Cep" />
       </div>
 
       <div>
         <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
-        <input type="text" class="form-control" id="exampleNomeSocial" placeholder="Nome Social" />
+        <input type="text" class="form-control" id="exampleNomeSocial"  [(ngModel)]="corretoraSalvar.nomeSocial" placeholder="Nome Social" />
       </div>
     </fieldset>
-  </form>
+
 
   <div class="containerButtonEnviar">
-    <button type="button" class="button">Enviar</button>
+    <button (click)="salvar()" type="button" class="button">Enviar</button>
     <button type="button" class="button">Limpar</button>
   </div>
 </div>
