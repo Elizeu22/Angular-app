@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Corretora } from './corretora';
+import { Corretora } from '../../Model/corretora';
 import { CorretoraService } from '../../Service/corretora.service';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Corretora } from '../Componentes/header/corretora';
+import { Corretora } from '../Model/corretora';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -15,15 +15,15 @@ export class CorretoraService {
     })
   }
 
-  localizarCorretoras(){
-    return this.http.get(this.url + '/Localizar')
-  }
+ 
 
   pesquisarCorretora(cnpj:string){
     return this.http.get(this.url + '/Pesquisar'+cnpj);
   }
 
-
+  public listarCorretora():Observable<Corretora[]>{
+  return this.http.get<Corretora[]>(this.url +'Localizar')
+  }
 
   public salvar(corretora:Corretora):Observable<Corretora>{
     return this.http.post<Corretora>(this.url +'Gravar',corretora)
