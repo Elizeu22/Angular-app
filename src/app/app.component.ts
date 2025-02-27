@@ -16,10 +16,10 @@ export class AppComponent implements OnInit {
   constructor(private corretoraService:CorretoraService){}
   ngOnInit(){
   
-    this.corretoraService.localizarCorretoras().subscribe((data)=>{
-      console.log(data);
+   // this.corretoraService.localizarCorretoras().subscribe((data)=>{
+    //  console.log(data);
      // this.corretoras = data;
       
-    })  
+   // })  
 	}
 }

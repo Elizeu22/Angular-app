@@ -44,12 +44,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="table-active">
+    <tr class="table-active" *ngFor="let corretoraSalvar of listarDados">
       <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{{corretoraSalvar.cnpj}}</td>
+      <td>{{corretoraSalvar.corretora}}</td>
+      <td>{{corretoraSalvar.logradouro}}</td>
+      <td>{{corretoraSalvar.cep}}</td>
+      <td>{{corretoraSalvar.nomeSocial}}</td>
     </tr>
     
   </tbody>
