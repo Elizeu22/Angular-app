@@ -32,38 +32,34 @@
     <fieldset>
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCnpj" placeholder="Digite o Cnpj" />
+        <input type="text" class="form-control"   [(ngModel)]="corretoraSalvar.cnpj"   placeholder="Digite o Cnpj"  [ngModelOptions]="{standalone: true}"/>
       </div>
 
       <div class="containerButtonPesquisa">
-        <button type="button" class="button"> Pesquisar</button>
+        <button (click)="pesquisar()" type="button" class="button"> Pesquisar</button>
         <button type="button" class="button">Limpar</button>
       </div>
 
       <div>
         <label for="exampleCorretora" class="form-label mt-4">Corretora</label>
-        <input type="text" class="form-control" id="exampleCorretora" placeholder="Corretora" />
+        <input type="text" class="form-control"  placeholder="Corretora" [(ngModel)]="inputCorretora" [ngModelOptions]="{standalone: true}" />
       </div>
 
       <div>
         <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
-        <input type="text" class="form-control" id="exampleLogradouro" placeholder="Logradouro" />
+        <input type="text" class="form-control"  placeholder="Logradouro" [(ngModel)]="inputLogradouro"  [ngModelOptions]="{standalone: true}"/>
       </div>
 
       <div>
         <label for="exampleCep" class="form-label mt-4">Cep</label>
-        <input type="text" class="form-control" id="exampleCep" placeholder="Cep" />
+        <input type="text" class="form-control"  placeholder="Cep" [(ngModel)]="inputCep"  [ngModelOptions]="{standalone: true}" />
       </div>
 
       <div>
         <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
-        <input type="text" class="form-control" id="exampleNomeSocial" placeholder="Nome Social" />
+        <input type="text" class="form-control"  placeholder="Nome Social" [(ngModel)]="inputnomeSocial" [ngModelOptions]="{standalone: true}"/>
       </div>
 
-      <div>
-        <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCnpj" placeholder="Cnpj" />
-      </div>
     </fieldset>
   </form>
 </div>

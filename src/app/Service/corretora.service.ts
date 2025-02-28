@@ -17,8 +17,8 @@ export class CorretoraService {
 
  
 
-  pesquisarCorretora(cnpj:string){
-    return this.http.get(this.url + '/Pesquisar'+cnpj);
+  public pesquisarCorretora(cnpj:string){
+    return this.http.get(this.url + 'Pesquisar?cnpj='+cnpj);
   }
 
   public listarCorretora():Observable<Corretora[]>{
