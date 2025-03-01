@@ -32,12 +32,20 @@ export class PesquisarComponent {
   
       this.corretoraService.pesquisarCorretora(this.corretoraSalvar.cnpj).subscribe(data=>{
 
+        try{
         this.corretoraPesquisar = data;
 
         this.inputCorretora =  this.corretoraPesquisar.corretora;
         this.inputCep = this.corretoraPesquisar.cep;
         this.inputLogradouro =  this.corretoraPesquisar.logradouro;
         this.inputnomeSocial = this.corretoraPesquisar.nomeSocial;
+        }
+        catch(error)
+        {
+
+          alert("Ops houve um erro ao pesquisar os dados");
+
+        }
       
   
       }

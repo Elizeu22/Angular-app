@@ -28,15 +28,15 @@
 </nav>
 
 <div class="containerAtualizar">
-  <form>
+
     <fieldset>
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCnpj" placeholder="Digite o Cnpj" />
+        <input type="text" class="form-control" id="exampleCnpj" placeholder="Digite o Cnpj"  [(ngModel)]="corretoraSalvar.cnpj" />
       </div>
 
       <div class="containerButtonAtualizar">
-        <button type="button" class="button">
+        <button type="button" (click)="pesquisar()" class="button">
           Pesquisar
         </button>
         <button type="button" class="button">Limpar</button>
@@ -44,33 +44,33 @@
 
       <div>
         <label for="exampleCorretora" class="form-label mt-4">Corretora</label>
-        <input type="text" class="form-control" id="exampleCorretora" placeholder="Corretora" />
+        <input type="text" class="form-control"  placeholder="Corretora" [(ngModel)]="inputCorretora"  />
       </div>
 
       <div>
         <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
-        <input type="text" class="form-control" id="exampleLogradouro" placeholder="Logradouro" />
+        <input type="text" class="form-control"  placeholder="Logradouro" [(ngModel)]="inputLogradouro" />
       </div>
 
       <div>
         <label for="exampleCep" class="form-label mt-4">Cep</label>
-        <input type="text" class="form-control" id="exampleCep" placeholder="Cep" />
+        <input type="text" class="form-control"  placeholder="Cep"   [(ngModel)]="inputCep" />
       </div>
 
       <div>
         <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
-        <input type="text" class="form-control" id="exampleNomeSocial" placeholder="Nome Social" />
+        <input type="text" class="form-control"  placeholder="Nome Social" [(ngModel)]="inputnomeSocial" />
       </div>
 
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCnpj" placeholder="Cnpj" />
+        <input type="text" class="form-control"  placeholder="Cnpj" [(ngModel)]="inputCnpj" />
       </div>
     </fieldset>
-  </form>
+
 
   <div class="containerButtonAtualizar">
-    <button type="button" class="button">Enviar</button>
-    <button type="button" class="button">Limpar</button>
+    <button type="button" (click)="atualizar()" class="button">Atualizar Dados</button>
+    <button type="button" class="button">Limpar Dados</button>
   </div>
 </div>

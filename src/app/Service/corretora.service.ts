@@ -29,12 +29,12 @@ export class CorretoraService {
     return this.http.post<Corretora>(this.url +'Gravar',corretora)
   }
 
-  atualizarCorretora(id:string,formAtualiza:any){
-    return this.http.put(this.url +'/Atualizar'+id,formAtualiza);
+  public atualizarCorretora(id:string,formAtualiza:any){
+    return this.http.put(this.url +'Atualizar?cnpj='+id,formAtualiza);
   }
 
   deletarCorretora(cnpj:string){
-    return this.http.delete(this.url +'/Deletar'+cnpj);
+    return this.http.delete(this.url +'Deletar'+cnpj);
   }
 
 
