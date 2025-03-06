@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Corretora } from '../../Model/corretora';
 import { CorretoraService } from '../../Service/corretora.service';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -11,12 +12,18 @@ import { CorretoraService } from '../../Service/corretora.service';
 export class HeaderComponent implements OnInit {
 
   public corretoraSalvar:Corretora = new Corretora();
+
+  CadastroForm!: FormGroup
  
   constructor(private corretoraService:CorretoraService){}
+
+
 
   ngOnInit(){
 
   }
+
+
 
 
   public salvar(){

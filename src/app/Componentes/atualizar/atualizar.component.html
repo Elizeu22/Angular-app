@@ -32,7 +32,7 @@
     <fieldset>
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCnpj" placeholder="Digite o Cnpj"  [(ngModel)]="corretoraSalvar.cnpj" />
+        <input type="text" class="form-control"  placeholder="Digite o Cnpj"  [(ngModel)]="corretoraSalvar.cnpj"  />
       </div>
 
       <div class="containerButtonAtualizar">
@@ -44,33 +44,33 @@
 
       <div>
         <label for="exampleCorretora" class="form-label mt-4">Corretora</label>
-        <input type="text" class="form-control"  placeholder="Corretora" [(ngModel)]="inputCorretora"  />
+        <input type="text" class="form-control"  placeholder="Corretora" [(ngModel)]="corretoraSalvar.corretora"  [ngModelOptions]="{standalone: true}" />
       </div>
 
       <div>
         <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
-        <input type="text" class="form-control"  placeholder="Logradouro" [(ngModel)]="inputLogradouro" />
+        <input type="text" class="form-control"  placeholder="Logradouro" [(ngModel)]="corretoraSalvar.logradouro"   [ngModelOptions]="{standalone: true}"/>
       </div>
 
       <div>
         <label for="exampleCep" class="form-label mt-4">Cep</label>
-        <input type="text" class="form-control"  placeholder="Cep"   [(ngModel)]="inputCep" />
+        <input type="text" class="form-control"  placeholder="Cep"   [(ngModel)]="corretoraSalvar.cep"  [ngModelOptions]="{standalone: true}" />
       </div>
 
       <div>
         <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
-        <input type="text" class="form-control"  placeholder="Nome Social" [(ngModel)]="inputnomeSocial" />
+        <input type="text" class="form-control"  placeholder="Nome Social" [(ngModel)]="corretoraSalvar.nomeSocial" [ngModelOptions]="{standalone: true}" />
       </div>
 
       <div>
         <label for="exampleCnpj" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control"  placeholder="Cnpj" [(ngModel)]="inputCnpj" />
+        <input type="text" class="form-control"  placeholder="Cnpj" [(ngModel)]="inputCnpj" [ngModelOptions]="{standalone: true}" />
       </div>
     </fieldset>
 
 
   <div class="containerButtonAtualizar">
-    <button type="button" (click)="atualizar()" class="button">Atualizar Dados</button>
+    <button  (click)="atualizar()" class="button">Atualizar Dados</button>
     <button type="button" class="button">Limpar Dados</button>
   </div>
 </div>

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CorretoraService {
-  readonly url = 'http://localhost:5085/corretores/';
+  readonly url = '';
   constructor(private http: HttpClient) {}
   httpOptions = {
     headers: new HttpHeaders({
