@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CorretoraService {
-  readonly url = '';
+  readonly url = 'http://localhost:5085/corretores/';
   constructor(private http: HttpClient) {}
   httpOptions = {
     headers: new HttpHeaders({
@@ -34,7 +34,7 @@ export class CorretoraService {
   }
 
   deletarCorretora(cnpj:string){
-    return this.http.delete(this.url +'Deletar'+cnpj);
+    return this.http.delete(this.url +'Deletar?cnpj='+cnpj);
   }
 
 

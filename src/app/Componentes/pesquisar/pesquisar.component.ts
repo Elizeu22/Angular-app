@@ -46,11 +46,26 @@ export class PesquisarComponent {
           alert("Ops houve um erro ao pesquisar os dados");
 
         }
-      
+      } 
+      )
+    }
+
+
+    public deletar(){
   
-      }
-     
+      this.corretoraService.deletarCorretora(this.corretoraSalvar.cnpj).subscribe(data=>{
+
+        try{
+          alert("Dado excluido com sucesso!");
         
+        }
+        catch(error)
+        {
+
+          alert("Ops houve um erro ao pesquisar os dados");
+
+        }
+      } 
       )
     }
 
