@@ -85,6 +85,7 @@ export class AtualizarComponent implements OnInit {
 
 
           alert("Dados atualizados com Sucesso");
+          this.limparDados();
 
           
             }
@@ -95,6 +96,19 @@ export class AtualizarComponent implements OnInit {
     
             }
         }
+
+    
+      public limparDados(){
+
+        this.corretoraSalvar.corretora = '';
+        this.corretoraSalvar.cep = '';
+        this.corretoraSalvar.logradouro = '';
+        this.corretoraSalvar.nomeSocial = '';
+        this.inputCnpj = '';
+        this.corretoraSalvar.cnpj = '';
+
+
+      }
       
       }      
 

@@ -69,4 +69,16 @@ export class PesquisarComponent {
       )
     }
 
+
+    public limparDados(){
+
+      this.inputCorretora = '';
+      this.inputLogradouro = '';
+      this.inputCep = '';
+      this.inputnomeSocial = '';
+      this.inputCnpj = '';
+
+
+    }
+
 }

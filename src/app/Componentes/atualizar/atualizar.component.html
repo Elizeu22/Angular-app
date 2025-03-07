@@ -39,8 +39,10 @@
         <button type="button" (click)="pesquisar()" class="button">
           Pesquisar
         </button>
-        <button type="button" class="button">Limpar</button>
+        <button type="button" (click)="limparDados()" class="button">Limpar</button>
       </div>
+
+  
 
       <div>
         <label for="exampleCorretora" class="form-label mt-4">Corretora</label>
@@ -68,9 +70,10 @@
       </div>
     </fieldset>
 
+    <div class="containerButtonAtualizar">
+      <button  (click)="atualizar()" class="button">Atualizar Dados</button>
+    </div>
 
-  <div class="containerButtonAtualizar">
-    <button  (click)="atualizar()" class="button">Atualizar Dados</button>
-    <button type="button" class="button">Limpar Dados</button>
-  </div>
+
+
 </div>
