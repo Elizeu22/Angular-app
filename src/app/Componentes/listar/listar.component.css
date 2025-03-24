@@ -1,8 +1,18 @@
 .containerListar{
     padding-top: 70px;
-    padding-left: 500px;
+    padding-left: 300px;
     width: 1480px;
     height: 780px;
 
 
+}
+
+
+
+
+
+.containerFooter{
+    padding-top: 62px;
+    width: 1912px;
+    background-color: #008CBA;
 }

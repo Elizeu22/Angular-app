@@ -1,5 +1,5 @@
 .containerAtualizar{
-    padding-top: 70px;
+    padding-top: 10px;
     padding-left: 500px;
     width: 1480px;
     height: 780px;
@@ -28,3 +28,11 @@
 
 
 }
+
+
+.containerFooter{
+    padding-top: 86px;
+    width: 1912px;
+    background-color: #008CBA;
+}
+

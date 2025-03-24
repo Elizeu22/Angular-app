@@ -40,6 +40,7 @@
           Pesquisar
         </button>
         <button type="button" (click)="limparDados()" class="button">Limpar</button>
+        <button  (click)="atualizar()" class="button">Atualizar Dados</button>
       </div>
 
   
@@ -69,11 +70,6 @@
         <input type="text" class="form-control"  placeholder="Cnpj" [(ngModel)]="inputCnpj" [ngModelOptions]="{standalone: true}" />
       </div>
     </fieldset>
-
-    <div class="containerButtonAtualizar">
-      <button  (click)="atualizar()" class="button">Atualizar Dados</button>
-    </div>
-
-
-
 </div>
+
+<div class="containerFooter"></div>

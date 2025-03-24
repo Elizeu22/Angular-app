@@ -33,9 +33,10 @@
 </nav>
         
 <div class="containerListar">
-<table class="table table-hover">
+<table class="table mat-table">
   <thead>
     <tr>
+      <th scope="col"></th>
       <th scope="col">Cnpj</th>
       <th scope="col">Corretora</th>
       <th scope="col">Logradouro</th>
@@ -44,7 +45,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="table-active" *ngFor="let corretoraSalvar of listarDados">
+    <tr class="table" *ngFor="let corretoraSalvar of listarDados">
       <th scope="row"></th>
       <td>{{corretoraSalvar.cnpj}}</td>
       <td>{{corretoraSalvar.corretora}}</td>
@@ -56,3 +57,7 @@
   </tbody>
 </table>
 </div>
+
+
+
+<div class="containerFooter">></div>
