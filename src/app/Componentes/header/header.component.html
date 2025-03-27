@@ -1,3 +1,5 @@
+<div class="containerHead"></div>
+
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarColor01">
@@ -16,7 +18,11 @@
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search" />
+        <input
+          class="form-control me-sm-2"
+          type="search"
+          placeholder="Search"
+        />
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">
           Search
         </button>
@@ -26,41 +32,71 @@
 </nav>
 
 <div class="container">
+  <fieldset>
+    <div>
+      <label for="exampleCorretora" class="form-label mt-4">Cnpj</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleCorretora"
+        [(ngModel)]="corretoraSalvar.cnpj"
+        placeholder="Corretora"
+      />
+    </div>
 
+    <div>
+      <label for="exampleCnpj" class="form-label mt-4">Corretora</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleCnpj"
+        [(ngModel)]="corretoraSalvar.corretora"
+        placeholder="Cnpj"
+      />
+    </div>
 
-    <fieldset>
-      <div>
-        <label for="exampleCorretora" class="form-label mt-4">Cnpj</label>
-        <input type="text" class="form-control" id="exampleCorretora"  [(ngModel)]="corretoraSalvar.cnpj"  placeholder="Corretora" />
-      </div>
+    <div>
+      <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleLogradouro"
+        [(ngModel)]="corretoraSalvar.logradouro"
+        placeholder="Logradouro"
+      />
+    </div>
 
-      <div>
-        <label for="exampleCnpj" class="form-label mt-4">Corretora</label>
-        <input type="text" class="form-control" id="exampleCnpj"  [(ngModel)]="corretoraSalvar.corretora" placeholder="Cnpj" />
-      </div>
+    <div>
+      <label for="exampleCep" class="form-label mt-4">Cep</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleCep"
+        [(ngModel)]="corretoraSalvar.cep"
+        placeholder="Cep"
+      />
+    </div>
 
-      <div>
-        <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
-        <input type="text" class="form-control" id="exampleLogradouro"  [(ngModel)]="corretoraSalvar.logradouro" placeholder="Logradouro" />
-      </div>
-
-      <div>
-        <label for="exampleCep" class="form-label mt-4">Cep</label>
-        <input type="text" class="form-control" id="exampleCep"  [(ngModel)]="corretoraSalvar.cep" placeholder="Cep" />
-      </div>
-
-      <div>
-        <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
-        <input type="text" class="form-control" id="exampleNomeSocial"  [(ngModel)]="corretoraSalvar.nomeSocial" placeholder="Nome Social" />
-      </div>
-    </fieldset>
-
+    <div>
+      <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleNomeSocial"
+        [(ngModel)]="corretoraSalvar.nomeSocial"
+        placeholder="Nome Social"
+      />
+    </div>
+  </fieldset>
 
   <div class="containerButtonEnviar">
     <button (click)="salvar()" type="button" class="button">Enviar</button>
-    <button type="button" class="button">Limpar</button>
+    <button (click)="limparDados()" type="button" class="button">Limpar</button>
   </div>
-
 </div>
 
 <div class="containerFooter"></div>
+
+
+
+

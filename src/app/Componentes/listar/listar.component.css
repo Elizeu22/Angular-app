@@ -1,13 +1,10 @@
 .containerListar{
-    padding-top: 70px;
-    padding-left: 300px;
-    width: 1480px;
+    margin: auto;
+    width: 50%;
     height: 780px;
-
-
+    padding: 10px;
+    background-image: url('../../../assets/imagens/5594016.jpg');
 }
-
-
 
 
 

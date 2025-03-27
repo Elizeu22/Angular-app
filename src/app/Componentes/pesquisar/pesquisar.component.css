@@ -1,22 +1,25 @@
-.containerPesquisa{
-    padding-top: 70px;
-    padding-left: 500px;
-    width: 1480px;
+.containerPesquisa {
+    margin: auto;
+    width: 50%;
     height: 780px;
+    padding: 10px;
+    background-image: url('../../../assets/imagens/5594016.jpg');
+
 
 
 }
 
 
-.containerButtonPesquisa{
+.containerButtonPesquisa {
     padding-top: 10px;
     padding-left: 20px;
 }
 
 
 
-.button{
-    background-color:#008CBA;/* Green */
+.button {
+    background-color: #008CBA;
+    /* Green */
     border: none;
     color: white;
     padding: 10px 22px;
@@ -32,10 +35,8 @@
 
 
 
-.containerFooter{
+.containerFooter {
     padding-top: 86px;
     width: 1912px;
     background-color: #008CBA;
 }
-
-

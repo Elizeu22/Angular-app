@@ -39,4 +39,16 @@ export class HeaderComponent implements OnInit {
     )
   }
 
+
+  public limparDados(){
+
+    this.corretoraSalvar.corretora = '';
+    this.corretoraSalvar.cep = '';
+    this.corretoraSalvar.logradouro = '';
+    this.corretoraSalvar.nomeSocial = '';
+    this.corretoraSalvar.cnpj = '';
+
+
+  }
+
 }

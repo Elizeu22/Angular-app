@@ -1,9 +1,9 @@
 .container{
-    padding-top: 70px;
-    width: 980px;
+    margin: auto;
+    width: 50%;
     height: 780px;
-
-
+    padding: 10px;
+    background-image: url('../../../assets/imagens/5594016.jpg');
 }
 
 
@@ -28,13 +28,6 @@
 
 
 }
-
-.containerFooter{
-    padding-top: 86px;
-    width: 1912px;
-    background-color: #008CBA;
-}
-
 
 .containerFooter{
     padding-top: 86px;

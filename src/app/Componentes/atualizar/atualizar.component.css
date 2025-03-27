@@ -1,8 +1,9 @@
 .containerAtualizar{
-    padding-top: 10px;
-    padding-left: 500px;
-    width: 1480px;
+    margin: auto;
+    width: 50%;
     height: 780px;
+    padding: 10px;
+    background-image: url('../../../assets/imagens/5594016.jpg');
 
 
 }

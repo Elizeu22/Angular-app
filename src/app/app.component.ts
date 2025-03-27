@@ -13,6 +13,8 @@ export class AppComponent implements OnInit {
   title = 'app-corretora';
   corretoras = [];
 
+  
+
   constructor(private corretoraService:CorretoraService){}
   ngOnInit(){
   
