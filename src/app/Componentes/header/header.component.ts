@@ -31,12 +31,9 @@ export class HeaderComponent implements OnInit {
       this.corretoraService.salvar(this.corretoraSalvar).subscribe(
         (response) => {
           alert('Gravado com Sucesso');
-          
-          this.corretoraSalvar.corretora = '';
-          this.corretoraSalvar.cep = '';
-          this.corretoraSalvar.logradouro = '';
-          this.corretoraSalvar.nomeSocial = '';
-          this.corretoraSalvar.cnpj = '';
+          this.limparDados();
+
+        
         },
         (error) => {
           alert('ops houve algum problema ao salvar os dados');

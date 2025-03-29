@@ -77,10 +77,9 @@ export class AtualizarComponent implements OnInit {
           this.corretoraSalvar.corretora == '' ||
           this.corretoraSalvar.logradouro == '' ||
           this.corretoraSalvar.nomeSocial == ''
-        ) {
-          alert('Ha campos que nao foram preenchidos por favor verificar');
-
-        } else {
+        ) 
+        {alert('Ha campos que nao foram preenchidos por favor verificar'); }
+           else {
 
         this.corretoraService.atualizarCorretora(this.corretoraSalvar.cnpj,this.corretoraSalvar).subscribe()
         
