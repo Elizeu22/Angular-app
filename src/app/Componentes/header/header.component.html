@@ -18,11 +18,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <input
-          class="form-control me-sm-2"
-          type="search"
-          placeholder="Search"
-        />
+        <input class="form-control me-sm-2" type="search" placeholder="Search" />
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">
           Search
         </button>
@@ -35,57 +31,32 @@
   <fieldset>
     <div>
       <label for="exampleCorretora" class="form-label mt-4">Cnpj</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleCorretora"
-        [(ngModel)]="corretoraSalvar.cnpj"
-        placeholder="Corretora"
-      />
+      <input type="text" class="form-control" id="exampleCorretora" [(ngModel)]="corretoraSalvar.cnpj"
+        placeholder="Corretora" required="required" />
     </div>
 
     <div>
       <label for="exampleCnpj" class="form-label mt-4">Corretora</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleCnpj"
-        [(ngModel)]="corretoraSalvar.corretora"
-        placeholder="Cnpj"
-      />
+      <input type="text" class="form-control" id="exampleCnpj" [(ngModel)]="corretoraSalvar.corretora"
+        placeholder="Cnpj" required="required" />
     </div>
 
     <div>
       <label for="exampleLogradouro" class="form-label mt-4">Logradouro</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleLogradouro"
-        [(ngModel)]="corretoraSalvar.logradouro"
-        placeholder="Logradouro"
-      />
+      <input type="text" class="form-control" id="exampleLogradouro" [(ngModel)]="corretoraSalvar.logradouro"
+        placeholder="Logradouro" required="required" />
     </div>
 
     <div>
       <label for="exampleCep" class="form-label mt-4">Cep</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleCep"
-        [(ngModel)]="corretoraSalvar.cep"
-        placeholder="Cep"
-      />
+      <input type="text" class="form-control" id="exampleCep" [(ngModel)]="corretoraSalvar.cep" placeholder="Cep"
+        required="required" />
     </div>
 
     <div>
       <label for="exampleNomeSocial" class="form-label mt-4">Nome Social</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleNomeSocial"
-        [(ngModel)]="corretoraSalvar.nomeSocial"
-        placeholder="Nome Social"
-      />
+      <input type="text" class="form-control" id="exampleNomeSocial" [(ngModel)]="corretoraSalvar.nomeSocial"
+        placeholder="Nome Social" required="required" />
     </div>
   </fieldset>
 
@@ -96,7 +67,3 @@
 </div>
 
 <div class="containerFooter"></div>
-
-
-
-

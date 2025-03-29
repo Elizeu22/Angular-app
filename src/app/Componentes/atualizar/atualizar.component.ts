@@ -71,6 +71,17 @@ export class AtualizarComponent implements OnInit {
 
       public atualizar(){
 
+        if (
+          this.corretoraSalvar.cep == '' ||
+          this.corretoraSalvar.cnpj == '' ||
+          this.corretoraSalvar.corretora == '' ||
+          this.corretoraSalvar.logradouro == '' ||
+          this.corretoraSalvar.nomeSocial == ''
+        ) {
+          alert('Ha campos que nao foram preenchidos por favor verificar');
+
+        } else {
+
         this.corretoraService.atualizarCorretora(this.corretoraSalvar.cnpj,this.corretoraSalvar).subscribe()
         
           try{
@@ -97,7 +108,7 @@ export class AtualizarComponent implements OnInit {
             }
         }
 
-    
+      }
       public limparDados(){
 
         this.corretoraSalvar.corretora = '';
